@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600&family=Lora:wght@400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+html {
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+ width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7.5rem;
+  padding: 0 3%;
+  border-top: 10px solid #0FBFB5;
+}
+.navbar .company-logo {
+  width: 9.5rem;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+.navbar ul li {
+  display: flex;
+}
+.navbar ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #010B15;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
+  text-transform: capitalize;
+}
+.navbar ul li a img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.navbar ul li button {
+  display: flex;
+  padding: 1rem 2.4rem;
+  justify-content: center;
+  border: none;
+  border-radius: 0.4rem;
+  background: #00BF91;
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+}
+.navbar .bars-menu {
+  width: 3rem;
+  display: none;
+}
+.header{
+    background: linear-gradient(180deg, #072133 0%, #051723 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 100px;
+    color: #fff;
+    overflow: hidden;
+    position: relative
+} 
+.header.backgroundcircles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+  }
+.outer-circle {
+    position: absolute;
+    width: 28%;
+    height: auto;
+    top: 6rem;
+    left: 36%;
+  }
+.middle-circle {
+    position: absolute;
+    width: 23%;
+    height: auto;
+    top: 10rem;
+    left: 38.2%;
+  }
+ .inner-circle {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    top: 13rem;
+    left: 40%;
+  } 
+  .radical-gradient {
+    position: absolute;
+    width: 44%;
+    height: auto;
+    top: 13rem;
+    left: 28%;
+  }
+
+.termsandconditionsbody{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+h1{
+    font-size: 5.6rem;
+    font-family:  DM Sans;
+}
+
+h2{
+    font-size: 1.6rem;
+    font-family: DM Sans;
+}
+p{
+    font-size: 1.4rem;
+    font-family: DM Sans;
+    color: grey;
+}
+h3{
+    font-size: 1.4rem;
+    font-family: DM Sans;
+}
+ul{
+    padding-left: 10px;
+}
+li{
+    font-size: 1.4rem;
+    font-family: DM Sans;
+    color: grey;
+    text-align: left;
+}
+
+.agreement,
+.intellectual-property,
+.our-services,
+.user-representations,
+.user-registrations, .free-trail,
+.purchasesandpayments,
+.cancelation,
+.prohibited-activities,
+.user-generated,
+.contribution-licience,
+.guidlinesforreview,
+.social-media,
+.third-party-websites,
+.services-managment,
+.privacy-policy,
+.termandtermination,
+.modificationsandinteruptions,
+.governinglaws,
+.dispute-resolution,
+.corrections,
+.disclaimer,
+.limitationsofliability,
+.identification,
+.user-data,
+.electronic-communication,
+.california-users,
+.miscellaneos,
+.contact-us
+{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 3rem; 
+    max-width: 900px;
+    width: 900px;
+}

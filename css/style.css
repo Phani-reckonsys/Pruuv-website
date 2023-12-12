@@ -1,0 +1,2990 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600&family=Lora:wght@400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+html {
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7.5rem;
+  padding: 0 3%;
+  border-top: 10px solid #0fbfb5;
+}
+.navbar .company-logo {
+  width: 9.5rem;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+.navbar ul li {
+  display: flex;
+}
+.navbar ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #010b15;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
+  text-transform: capitalize;
+}
+.navbar ul li a img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.navbar ul li button {
+  display: flex;
+  padding: 1rem 2.4rem;
+  justify-content: center;
+  border: none;
+  border-radius: 0.4rem;
+  background: #00bf91;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  cursor: pointer;
+}
+.navbar ul li button:hover {
+  background-color: #078d6d;
+}
+.navbar .bars-menu {
+  width: 3rem;
+  display: none;
+}
+
+.herosection {
+  background: linear-gradient(180deg, #072133 0%, #051723 100%);
+}
+.herosection__top {
+  height: 100rem;
+  position: relative;
+  width: 100%;
+}
+.herosection__top__backgroundcircles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.herosection__top__backgroundcircles .outer-circle {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  top: 10rem;
+  left: 25%;
+}
+.herosection__top__backgroundcircles .middle-circle {
+  position: absolute;
+  width: 40%;
+  height: auto;
+  top: 18rem;
+  left: 30%;
+}
+.herosection__top__backgroundcircles .inner-circle {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 26rem;
+  left: 35%;
+}
+.herosection__top__backgroundcircles .radical-gradient {
+  position: absolute;
+  width: 44%;
+  height: auto;
+  top: 15rem;
+  left: 28%;
+}
+.herosection__top__content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.herosection__top__content .large-content {
+  position: absolute;
+  top: 20rem;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 34px 34px rgba(0, 0, 0, 0.25);
+  font-family: Montserrat;
+  font-size: 14.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 116%; /* 167.04px */
+  letter-spacing: -4.32px;
+  text-transform: uppercase;
+}
+.herosection__top__content .x-logo {
+  position: absolute;
+  width: 6%;
+  max-width: 9rem;
+  height: auto;
+  top: 7rem;
+  left: 48%;
+}
+.herosection__top__content .facebook-logo {
+  position: absolute;
+  width: 6%;
+  max-width: 9rem;
+  height: auto;
+  top: 12rem;
+  left: 65%;
+}
+.herosection__top__content .instagram-logo {
+  position: absolute;
+  width: 6%;
+  max-width: 9rem;
+  height: auto;
+  top: 24rem;
+  left: 80%;
+}
+.herosection__top__content .google-logo {
+  position: absolute;
+  width: 5%;
+  max-width: 8rem;
+  height: auto;
+  top: 15rem;
+  left: 32%;
+}
+.herosection__top__content .analytics-logo {
+  position: absolute;
+  width: 5%;
+  max-width: 8rem;
+  height: auto;
+  top: 50rem;
+  left: 20%;
+}
+.herosection__top__content .instagram-logo-2 {
+  position: absolute;
+  width: 6%;
+  max-width: 9rem;
+  height: auto;
+  top: 70rem;
+  left: 30%;
+}
+.herosection__top__content .hubspot-logo {
+  position: absolute;
+  width: 6%;
+  max-width: 9rem;
+  height: auto;
+  top: 80rem;
+  left: 65%;
+}
+.herosection__top__content .excel-logo {
+  position: absolute;
+  width: 6%;
+  max-width: 9rem;
+  height: auto;
+  top: 70rem;
+  left: 75%;
+}
+.herosection__top__content .sub-content {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 60rem;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 33px */
+}
+.herosection__top__content .contactnowbtn {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 68rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20.6rem;
+  padding: 1rem 2.4rem;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: #00bf91;
+  border: none;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+}
+.herosection__top__content .contactnowbtn:hover {
+  background-color: #078d6d;
+}
+.herosection__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.herosection__bottom .main-content {
+  color: var(--new-palette-neutral-white, #fff);
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font-family: Lora;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 56px */
+}
+.herosection__bottom .sub-content {
+  color: var(--new-palette-neutral-white, #fff);
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  font-family: DM Sans;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 33px */
+}
+.herosection__bottom img {
+  width: 75%;
+  margin: auto;
+  margin-top: 13rem;
+}
+
+.processsection {
+  display: flex;
+  padding: 5.2rem 0rem 20rem 6.2rem;
+}
+.processsection__info {
+  padding-top: 5rem;
+  width: 48%;
+}
+.processsection__info .heading {
+  color: #071b2e;
+  font-family: Montserrat;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+.processsection__info .content {
+  width: 70%;
+  color: #071b2e;
+  font-family: Lora;
+  font-size: 4.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123%; /* 60.27px */
+  margin-top: 2.3rem;
+}
+.processsection__info .registerbtn {
+  display: flex;
+  padding: 1.4rem 2.4rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 6.3rem;
+  border: none;
+  border-radius: 0.4rem;
+  background: #2cac9d;
+  color: var(--old-palette-neutral-white, #fff);
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.processsection__info .registerbtn:hover {
+  background-color: #078d6d;
+}
+.processsection__data {
+  align-self: left;
+  width: 50%;
+}
+.processsection__data .numbering {
+  color: rgba(26, 87, 80, 0.92);
+  font-family: Montserrat;
+  font-size: 22rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 308px */
+  text-transform: uppercase;
+}
+.processsection__data .heading {
+  color: #071b2e;
+  font-family: DM Sans;
+  font-size: 2.7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 35.1px */
+}
+.processsection__data .content {
+  width: 65%;
+  color: #071b2e;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  margin-top: 2rem;
+}
+
+.marketingsection {
+  background: #e7f4fa;
+  padding: 10rem 0;
+  margin: auto;
+}
+.marketingsection .heading {
+  color: #268297;
+  font-family: DM Sans;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+.marketingsection .content {
+  color: #071b2e;
+  text-align: center;
+  font-family: Lora;
+  font-size: 4.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123%; /* 60.27px */
+  margin: 2rem 0;
+}
+.marketingsection .sub-content {
+  color: #071b2e;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+}
+.marketingsection .marketingvideocontainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+.marketingsection .line {
+  width: 70%;
+  height: 0.1rem;
+  background-color: #000000;
+  margin: auto;
+  opacity: 0.2;
+}
+.marketingsection .contentpara {
+  width: 50%;
+  margin: auto;
+  margin-top: 7.6rem;
+  color: #010b15;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 48px */
+}
+.marketingsection .registerbtn {
+  display: flex;
+  padding: 1.4rem 2.4rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  margin-top: 6.3rem;
+  border: none;
+  border-radius: 4px;
+  background: #2cac9d;
+  color: var(--old-palette-neutral-white, #fff);
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 6rem;
+  cursor: pointer;
+}
+.marketingsection .registerbtn:hover {
+  background-color: #078d6d;
+}
+.marketingsection .tabs {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.marketingsection .tabs .multisourceconnection {
+  margin-top: 9rem;
+  width: 60%;
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+.marketingsection .tabs .multisourceconnection img {
+  height: 7.2rem;
+  width: 7.2rem;
+}
+.marketingsection .tabs .multisourceconnection .heading {
+  color: #0a1015;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  margin-bottom: 1.9rem;
+  margin-top: 3rem;
+}
+.marketingsection .tabs .multisourceconnection .content {
+  color: #292828;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+.marketingsection .tabs .definegoal {
+  margin-top: 9rem;
+  width: 40%;
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+.marketingsection .tabs .definegoal img {
+  height: 7.2rem;
+  width: 7.2rem;
+}
+.marketingsection .tabs .definegoal .heading {
+  color: #0a1015;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  margin-bottom: 1.9rem;
+  margin-top: 3rem;
+}
+.marketingsection .tabs .definegoal .content {
+  color: #292828;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+.marketingsection .tabs .accuraterevenueinfo {
+  width: 40%;
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+.marketingsection .tabs .accuraterevenueinfo img {
+  height: 7.2rem;
+  width: 7.2rem;
+}
+.marketingsection .tabs .accuraterevenueinfo .heading {
+  color: #0a1015;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  margin-bottom: 1.9rem;
+  margin-top: 3rem;
+}
+.marketingsection .tabs .accuraterevenueinfo .content {
+  color: #292828;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+.marketingsection .tabs .accuratedatatracking {
+  width: 60%;
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+.marketingsection .tabs .accuratedatatracking img {
+  height: 7.2rem;
+  width: 7.2rem;
+}
+.marketingsection .tabs .accuratedatatracking .heading {
+  color: #0a1015;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  margin-bottom: 1.9rem;
+  margin-top: 3rem;
+}
+.marketingsection .tabs .accuratedatatracking .content {
+  color: #292828;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+.marketingsection .viewall {
+  text-align: center;
+  margin-top: 6.2rem;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+}
+.marketingsection .viewall:after {
+  content: "";
+  display: block;
+  border: 1px solid #292828;
+  width: 10%;
+  margin: 1rem auto;
+}
+
+.salessection {
+  background: #10171c;
+  padding: 10rem 0;
+  margin: auto;
+}
+.salessection__heading {
+  color: #268297;
+  font-family: DM Sans;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+.salessection__content {
+  width: 60%;
+  color: #fff;
+  text-align: center;
+  font-family: Lora;
+  font-size: 4.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123%; /* 60.27px */
+  margin: 2rem auto;
+}
+.salessection .sub-content {
+  width: 50%;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+}
+.salessection .salesvideocontainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+}
+.salessection .line {
+  width: 70%;
+  height: 0.1rem;
+  background-color: #fff;
+  margin: auto;
+  opacity: 0.2;
+}
+.salessection .contentpara {
+  width: 50%;
+  margin: auto;
+  margin-top: 7.6rem;
+  color: #fff;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 48px */
+}
+.salessection .registerbtn {
+  display: flex;
+  padding: 1.4rem 2.4rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  margin-top: 6.3rem;
+  border: none;
+  border-radius: 0.4rem;
+  background: #2cac9d;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 6rem;
+  cursor: pointer;
+}
+.salessection .registerbtn:hover {
+  background-color: #078d6d;
+}
+.salessection .tabs {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.salessection .tabs .customise {
+  margin-top: 9rem;
+  width: 60%;
+  padding: 4rem;
+  background-color: #1d262d;
+  border-radius: 2rem;
+}
+.salessection .tabs .customise .customiseimg {
+  height: 7.2rem;
+  width: 7.2rem;
+}
+.salessection .tabs .customise .heading {
+  color: #fff;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  margin-bottom: 1.9rem;
+  margin-top: 3rem;
+}
+.salessection .tabs .customise .content {
+  display: flex;
+  justify-content: flex-start;
+  color: #fff;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  margin: 0;
+}
+.salessection .tabs .targets {
+  margin-top: 9rem;
+  width: 40%;
+  padding: 4rem;
+  background-color: #1d262d;
+  border-radius: 2rem;
+}
+.salessection .tabs .targets .targetsimg {
+  height: 7.2rem;
+  width: 7.2rem;
+}
+.salessection .tabs .targets .heading {
+  color: #fff;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  margin-bottom: 1.9rem;
+  margin-top: 3rem;
+}
+.salessection .tabs .targets .content {
+  color: #fff;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  margin: 0;
+}
+.salessection .tabs .coaching {
+  width: 40%;
+  padding: 4rem;
+  background-color: #1d262d;
+  border-radius: 2rem;
+}
+.salessection .tabs .coaching .coachingimg {
+  height: 7.2rem;
+  width: 7.2rem;
+}
+.salessection .tabs .coaching .heading {
+  color: #fff;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  margin-bottom: 1.9rem;
+  margin-top: 3rem;
+}
+.salessection .tabs .coaching .content {
+  color: #fff;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  margin: 0;
+}
+.salessection .tabs .control {
+  width: 60%;
+  padding: 4rem;
+  background-color: #1d262d;
+  border-radius: 2rem;
+}
+.salessection .tabs .control .controlimg {
+  height: 7.2rem;
+  width: 7.2rem;
+}
+.salessection .tabs .control .heading {
+  color: #fff;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  margin-bottom: 1.9rem;
+  margin-top: 3rem;
+}
+.salessection .tabs .control .content {
+  color: #fff;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  margin: 0;
+}
+.salessection .viewall {
+  text-align: center;
+  margin-top: 6.2rem;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+}
+.salessection .viewall:after {
+  content: "";
+  display: block;
+  border: 1px solid #fff;
+  width: 10%;
+  margin: 1rem auto;
+}
+
+.decisionmakersection {
+  background: #edede8;
+  padding: 10rem 0;
+  margin: auto;
+}
+.decisionmakersection__heading {
+  color: #268297;
+  font-family: DM Sans;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+.decisionmakersection__content {
+  color: #071b2e;
+  text-align: center;
+  font-family: Lora;
+  font-size: 4.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123%; /* 60.27px */
+  margin: 2rem 0;
+}
+.decisionmakersection__sub-content {
+  width: 50%;
+  margin: auto;
+  color: #071b2e;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  margin-bottom: 7.2rem;
+}
+.decisionmakersection .desionmakersection-videocontainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+.decisionmakersection .desionmakersection-videocontainer #decisionmakerssectionvideo {
+  width: 800px;
+}
+.decisionmakersection .decisionmakerstats {
+  display: flex;
+  justify-content: center;
+}
+.decisionmakersection .decisionmakerstats__col-1 {
+  display: flex;
+  flex-direction: column;
+}
+.decisionmakersection .decisionmakerstats__col-1 .triggerconditions {
+  width: 47rem;
+  margin-left: -3rem;
+}
+.decisionmakersection .decisionmakerstats__col-1 .schedule {
+  margin-top: -6rem;
+  width: 47rem;
+}
+.decisionmakersection .decisionmakerstats .notifications {
+  margin-left: -6rem;
+  width: 53.3rem;
+}
+.decisionmakersection .line {
+  width: 70%;
+  height: 0.1rem;
+  background-color: #000000;
+  margin: auto;
+  opacity: 0.2;
+}
+.decisionmakersection .contentpara {
+  width: 50%;
+  margin: auto;
+  margin-top: 7.6rem;
+  color: #010b15;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 48px */
+}
+.decisionmakersection .registerbtn {
+  display: flex;
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  margin-top: 6.3rem;
+  border: none;
+  border-radius: 4px;
+  background: #2cac9d;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 6rem;
+  cursor: pointer;
+}
+.decisionmakersection .registerbtn:hover {
+  background-color: #078d6d;
+}
+.decisionmakersection .tabs {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.decisionmakersection .tabs .alerts {
+  margin-top: 9rem;
+  width: 60%;
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+.decisionmakersection .tabs .alerts img {
+  height: 7.2rem;
+  width: 7.2rem;
+}
+.decisionmakersection .tabs .alerts .heading {
+  color: #0a1015;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  margin-bottom: 1.9rem;
+  margin-top: 3rem;
+}
+.decisionmakersection .tabs .alerts .content {
+  color: #292828;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+.decisionmakersection .tabs .accuratedatatracking {
+  margin-top: 9rem;
+  width: 40%;
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+.decisionmakersection .tabs .accuratedatatracking img {
+  height: 7.2rem;
+  width: 7.2rem;
+}
+.decisionmakersection .tabs .accuratedatatracking .heading {
+  color: #0a1015;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  margin-bottom: 1.9rem;
+  margin-top: 3rem;
+}
+.decisionmakersection .tabs .accuratedatatracking .content {
+  color: #292828;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+.decisionmakersection .tabs .access {
+  width: 40%;
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+.decisionmakersection .tabs .access img {
+  height: 7.2rem;
+  width: 7.2rem;
+}
+.decisionmakersection .tabs .access .heading {
+  color: #0a1015;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  margin-bottom: 1.9rem;
+  margin-top: 3rem;
+}
+.decisionmakersection .tabs .access .content {
+  color: #292828;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+.decisionmakersection .tabs .performance {
+  width: 60%;
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+.decisionmakersection .tabs .performance img {
+  height: 7.2rem;
+  width: 7.2rem;
+}
+.decisionmakersection .tabs .performance .heading {
+  color: #0a1015;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+  margin-bottom: 1.9rem;
+  margin-top: 3rem;
+}
+.decisionmakersection .tabs .performance .content {
+  color: #292828;
+  text-align: left;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+.decisionmakersection .viewall {
+  text-align: center;
+  margin-top: 6.2rem;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+}
+.decisionmakersection .viewall:after {
+  content: "";
+  display: block;
+  border: 1px solid #292828;
+  width: 10%;
+  margin: 1rem auto;
+}
+
+.testimonials {
+  background: #f8f8f8;
+  position: relative;
+}
+.testimonials__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.testimonials__background .outer-circle {
+  position: absolute;
+  bottom: -5rem;
+  left: 27%;
+  width: 50vw;
+  height: 50vw;
+  border: 1px solid #ddd;
+  border-radius: 25vw;
+}
+.testimonials__background .inner-circle {
+  position: absolute;
+  bottom: -5rem;
+  left: 32%;
+  width: 40vw;
+  height: 40vw;
+  border-radius: 20vw;
+  border: 1px solid #ddd;
+}
+.testimonials__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.testimonials__content__heading {
+  color: rgba(14, 125, 150, 0.92);
+  font-family: Centra No1;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  letter-spacing: 1.8px;
+  margin: auto;
+  margin-top: 8.7rem;
+  margin-bottom: 2rem;
+}
+.testimonials__content__content {
+  color: #071b2e;
+  font-family: Lora;
+  font-size: 49px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123%; /* 60.27px */
+  margin: auto;
+  width: 40%;
+  margin-bottom: 3.8rem;
+}
+.testimonials__content__sub-content {
+  color: #283a4d;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  margin: auto;
+  width: 40%;
+  text-align: center;
+  z-index: 1;
+}
+.testimonials__content__reviews {
+  display: flex;
+  gap: 5rem;
+  margin-top: 11rem;
+  overflow-x: auto;
+}
+.testimonials__content__reviews__card {
+  display: flex;
+  height: 22.4rem;
+  min-width: 35rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0px 24px 34px 0px rgba(126, 116, 116, 0.12);
+  padding: 3rem 3rem;
+  z-index: 1;
+}
+.testimonials__content__reviews__card .card-content {
+  color: #071b2e;
+  font-family: DM Sans;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+}
+.testimonials__content__reviews__card .card-profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.testimonials__content__reviews__card .card-profile img {
+  width: 4.5rem;
+  height: 4.5rem;
+  flex-shrink: 0;
+}
+.testimonials__content__reviews__card .card-profile .profile-data .profile-name {
+  color: #010101;
+  font-family: DM Sans;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 22.5px */
+}
+.testimonials__content__reviews__card .card-profile .profile-data .profile-designation {
+  color: rgba(69, 82, 85, 0.98);
+  font-family: DM Sans;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+}
+.testimonials__content__reviews .card-even {
+  margin-top: 4rem;
+}
+.testimonials__content__reviewsnavigation {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+  margin-top: 8.7rem;
+  margin-bottom: 6.7rem;
+}
+
+.footer {
+  background: #16242e;
+  padding: 10rem 0;
+  position: relative;
+}
+.footer .newsletter {
+  margin: auto;
+  position: relative;
+  display: flex;
+  width: 75%;
+  padding: 4%;
+  align-items: flex-start;
+  gap: 2rem;
+  border-radius: 3.2rem;
+  background: #213543;
+}
+.footer .newsletter__content {
+  position: relative;
+  width: 100%;
+}
+.footer .newsletter__content .content {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 44.8px */
+}
+.footer .newsletter__content .sub-content {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  margin-top: 1rem;
+}
+.footer .newsletter__content .registerbtn {
+  padding: 1.4rem 2.4rem;
+  margin-top: 5.5rem;
+  border: none;
+  border-radius: 4px;
+  background: #2cac9d;
+  color: var(--old-palette-neutral-white, #fff);
+  font-family: DM Sans;
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.footer .newsletter__content .registerbtn:hover {
+  background-color: #078d6d;
+}
+.footer .newsletter__images {
+  width: 100%;
+}
+.footer .newsletter__images .salesfunnel-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-bottom-right-radius: 3.2rem;
+  width: 45%;
+}
+.footer .newsletter__images .newsletter-revenue {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 25%;
+}
+.footer .terms-conditions {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  border-top: 1px solid rgba(69, 82, 85, 0.98);
+  padding-top: 5rem;
+}
+.footer .terms-conditions .policies {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin: auto;
+}
+.footer .terms-conditions .policies h2 a {
+  text-decoration: none;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer .terms-conditions .copyrightmark {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  width: 20%;
+  margin: 3rem auto;
+}
+.footer .footer-pruuv-logo {
+  position: absolute;
+  bottom: 9rem;
+  width: 8rem;
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1150px) {
+  html {
+    font-size: 10px;
+  }
+  .herosection__top__content .large-content {
+    font-size: 13rem;
+  }
+  .herosection__bottom .main-content {
+    width: 70%;
+  }
+  .processsection__info {
+    width: 80%;
+  }
+  .processsection__data {
+    width: 70%;
+  }
+  .marketingsection .contentpara {
+    width: 70%;
+  }
+  .salessection .sub-content {
+    width: 60%;
+  }
+  .salessection .contentpara {
+    width: 70%;
+  }
+  .decisionmakersection .contentpara {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 1150px) and (min-width: 1050px) {
+  html {
+    font-size: 10px;
+  }
+  .herosection__top__content .large-content {
+    font-size: 12rem;
+  }
+  .herosection__bottom .main-content {
+    width: 70%;
+  }
+  .processsection__info {
+    width: 80%;
+  }
+  .processsection__info .content {
+    font-size: 4rem;
+  }
+  .processsection__data {
+    width: 70%;
+  }
+  .marketingsection .contentpara {
+    width: 70%;
+  }
+  .salessection__content {
+    width: 70%;
+  }
+  .salessection .sub-content {
+    width: 60%;
+  }
+  .salessection .contentpara {
+    width: 70%;
+  }
+  .decisionmakersection .contentpara {
+    width: 70%;
+  }
+  .testimonials__content__content {
+    width: 60%;
+  }
+  .testimonials__content__sub-content {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1050px) and (min-width: 950px) {
+  html {
+    font-size: 9px;
+  }
+  .herosection__top__content .large-content {
+    font-size: 12rem;
+  }
+  .herosection__bottom .main-content {
+    width: 70%;
+  }
+  .processsection__info {
+    width: 80%;
+  }
+  .processsection__info .content {
+    font-size: 4rem;
+  }
+  .processsection__data {
+    width: 70%;
+  }
+  .marketingsection .contentpara {
+    width: 70%;
+  }
+  .marketingsection .marketingvideocontainer #marketingsectionvideo {
+    width: 800px;
+  }
+  .salessection__content {
+    width: 70%;
+  }
+  .salessection .sub-content {
+    width: 60%;
+  }
+  .salessection .salesvideocontainer #salessectionvideo {
+    width: 800px;
+  }
+  .salessection .contentpara {
+    width: 70%;
+  }
+  .decisionmakersection .contentpara {
+    width: 70%;
+  }
+  .testimonials__content__content {
+    width: 60%;
+  }
+  .testimonials__content__sub-content {
+    width: 70%;
+  }
+  .footer .newsletter {
+    width: 80%;
+  }
+  .footer .newsletter .content {
+    font-size: 3rem;
+  }
+  .footer .newsletter .sub-content {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 850px) {
+  html {
+    font-size: 9px;
+  }
+  .herosection__top {
+    height: 90rem;
+  }
+  .herosection__top__content .large-content {
+    font-size: 11rem;
+  }
+  .herosection__top__content .analytics-logo {
+    top: 45rem;
+  }
+  .herosection__top__content .instagram-logo-2 {
+    top: 62rem;
+  }
+  .herosection__top__content .hubspot-logo {
+    top: 68rem;
+  }
+  .herosection__top__content .excel-logo {
+    top: 62rem;
+  }
+  .herosection__top__content .sub-content {
+    top: 52rem;
+  }
+  .herosection__top__content .contactnowbtn {
+    top: 60rem;
+  }
+  .herosection__bottom .main-content {
+    width: 80%;
+  }
+  .processsection__info {
+    width: 80%;
+  }
+  .processsection__info .content {
+    font-size: 3.5rem;
+  }
+  .processsection__data {
+    width: 70%;
+  }
+  .marketingsection .contentpara {
+    width: 80%;
+  }
+  .marketingsection .marketingvideocontainer #marketingsectionvideo {
+    width: 700px;
+  }
+  .salessection__content {
+    width: 80%;
+  }
+  .salessection .salesvideocontainer #salessectionvideo {
+    width: 800px;
+  }
+  .salessection .sub-content {
+    width: 70%;
+  }
+  .salessection .contentpara {
+    width: 80%;
+  }
+  .decisionmakersection__sub-content {
+    width: 70%;
+  }
+  .decisionmakersection .contentpara {
+    width: 80%;
+  }
+  .testimonials__content__content {
+    width: 60%;
+  }
+  .testimonials__content__sub-content {
+    width: 75%;
+  }
+  .footer .newsletter {
+    width: 80%;
+  }
+  .footer .newsletter .content {
+    font-size: 3rem;
+  }
+  .footer .newsletter .sub-content {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 850px) and (min-width: 750px) {
+  html {
+    font-size: 8px;
+  }
+  .herosection__top {
+    height: 90rem;
+  }
+  .herosection__top__content .large-content {
+    font-size: 10em;
+  }
+  .herosection__top__content .analytics-logo {
+    top: 45rem;
+  }
+  .herosection__top__content .instagram-logo-2 {
+    top: 62rem;
+  }
+  .herosection__top__content .hubspot-logo {
+    top: 68rem;
+  }
+  .herosection__top__content .excel-logo {
+    top: 62rem;
+  }
+  .herosection__top__content .sub-content {
+    top: 52rem;
+  }
+  .herosection__top__content .contactnowbtn {
+    top: 60rem;
+  }
+  .herosection__bottom .main-content {
+    width: 80%;
+  }
+  .processsection__info {
+    width: 80%;
+  }
+  .processsection__info .content {
+    font-size: 3.5rem;
+  }
+  .processsection__data {
+    width: 70%;
+  }
+  .marketingsection .contentpara {
+    width: 80%;
+  }
+  .marketingsection .marketingvideocontainer #marketingsectionvideo {
+    width: 600px;
+  }
+  .marketingsection .tabs {
+    width: 80%;
+  }
+  .salessection__content {
+    width: 80%;
+  }
+  .salessection .sub-content {
+    width: 70%;
+  }
+  .salessection .salesvideocontainer #salessectionvideo {
+    width: 600px;
+  }
+  .salessection .salesinfo .salesinfo1 {
+    height: 33rem;
+  }
+  .salessection .salesinfo .salesinfo2 {
+    height: 48rem;
+  }
+  .salessection .salesinfo .salesinfo3 {
+    height: 33rem;
+  }
+  .salessection .contentpara {
+    width: 80%;
+  }
+  .salessection .tabs {
+    width: 80%;
+  }
+  .decisionmakersection__sub-content {
+    width: 70%;
+  }
+  .decisionmakersection .desionmakersection-videocontainer #decisionmakerssectionvideo {
+    width: 600px;
+  }
+  .decisionmakersection .contentpara {
+    width: 80%;
+  }
+  .decisionmakersection .tabs {
+    width: 80%;
+  }
+  .testimonials__content__content {
+    width: 70%;
+  }
+  .testimonials__content__sub-content {
+    width: 85%;
+  }
+  .footer .newsletter {
+    width: 80%;
+  }
+  .footer .newsletter .content {
+    font-size: 3rem;
+  }
+  .footer .newsletter .sub-content {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 750px) and (min-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar .bars-menu {
+    display: block;
+  }
+  .herosection__top {
+    height: 75rem;
+  }
+  .herosection__top__content .large-content {
+    font-size: 8.5em;
+  }
+  .herosection__top__content .analytics-logo {
+    top: 40rem;
+  }
+  .herosection__top__content .instagram-logo-2 {
+    top: 55rem;
+  }
+  .herosection__top__content .hubspot-logo {
+    top: 60rem;
+  }
+  .herosection__top__content .excel-logo {
+    top: 55rem;
+  }
+  .herosection__top__content .sub-content {
+    top: 46rem;
+    font-size: 1.8rem;
+  }
+  .herosection__top__content .contactnowbtn {
+    top: 53rem;
+  }
+  .herosection__top__backgroundcircles .middle-circle {
+    top: 14rem;
+  }
+  .herosection__top__backgroundcircles .inner-circle {
+    top: 19rem;
+  }
+  .herosection__top__backgroundcircles .radical-gradient {
+    top: 13rem;
+  }
+  .herosection__bottom .main-content {
+    width: 85%;
+    font-size: 4rem;
+  }
+  .herosection__bottom .sub-content {
+    width: 80%;
+    font-size: 1.7rem;
+  }
+  .herosection__bottom img {
+    margin-top: 7rem;
+  }
+  .processsection {
+    padding-bottom: 10rem;
+  }
+  .processsection__info {
+    width: 80%;
+  }
+  .processsection__info .content {
+    font-size: 2.8rem;
+  }
+  .processsection__data {
+    width: 70%;
+  }
+  .processsection__data .numbering {
+    line-height: 130%;
+    font-size: 18rem;
+  }
+  .processsection__data .heading {
+    font-size: 2.5rem;
+  }
+  .processsection__data .content {
+    width: 80%;
+    font-size: 1.6rem;
+  }
+  .marketingsection {
+    padding: 5rem 0;
+  }
+  .marketingsection .content {
+    font-size: 4rem;
+  }
+  .marketingsection .contentpara {
+    width: 80%;
+    font-size: 2.6rem;
+  }
+  .marketingsection .tabs {
+    width: 80%;
+    gap: 1.6rem;
+  }
+  .marketingsection .tabs .multisourceconnection {
+    margin-top: 5rem;
+    width: 60%;
+    padding: 2.5rem;
+  }
+  .marketingsection .tabs .multisourceconnection img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .marketingsection .tabs .multisourceconnection .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .marketingsection .tabs .multisourceconnection .content {
+    font-size: 1.6rem;
+    line-height: 140%;
+  }
+  .marketingsection .tabs .definegoal {
+    margin-top: 5rem;
+    width: 40%;
+    padding: 2.5rem;
+  }
+  .marketingsection .tabs .definegoal img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .marketingsection .tabs .definegoal .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .marketingsection .tabs .definegoal .content {
+    font-size: 1.6rem;
+    line-height: 140%; /* 28.8px */
+  }
+  .marketingsection .tabs .accuraterevenueinfo {
+    width: 40%;
+    padding: 2.5rem;
+  }
+  .marketingsection .tabs .accuraterevenueinfo img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .marketingsection .tabs .accuraterevenueinfo .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .marketingsection .tabs .accuraterevenueinfo .content {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28.8px */
+  }
+  .marketingsection .tabs .accuratedatatracking {
+    width: 60%;
+    padding: 2.5rem;
+  }
+  .marketingsection .tabs .accuratedatatracking img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .marketingsection .tabs .accuratedatatracking .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .marketingsection .tabs .accuratedatatracking .content {
+    font-size: 1.6rem;
+    line-height: 140%;
+  }
+  .marketingsection .marketinggraphs .marketinggraph1 {
+    margin-top: 8rem;
+    width: 38rem;
+  }
+  .marketingsection .marketinggraphs .marketinggraph2 {
+    width: 38rem;
+  }
+  .marketingsection .line {
+    width: 90%;
+  }
+  .salessection {
+    padding: 5rem 0;
+  }
+  .salessection__content {
+    width: 80%;
+    font-size: 4rem;
+  }
+  .salessection .sub-content {
+    width: 80%;
+    font-size: 1.7rem;
+  }
+  .salessection .salesinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13rem;
+    margin-bottom: 5.6rem;
+  }
+  .salessection .salesinfo .salesinfo1 {
+    height: 27rem;
+  }
+  .salessection .salesinfo .salesinfo2 {
+    height: 40rem;
+  }
+  .salessection .salesinfo .salesinfo3 {
+    height: 27rem;
+  }
+  .salessection .contentpara {
+    width: 80%;
+    font-size: 2.6rem;
+  }
+  .salessection .line {
+    width: 90%;
+  }
+  .salessection .tabs {
+    width: 80%;
+    gap: 1.6rem;
+  }
+  .salessection .tabs .customise {
+    margin-top: 6rem;
+    padding: 2.5rem;
+  }
+  .salessection .tabs .customise .customiseimg {
+    height: 6rem;
+    width: 6rem;
+  }
+  .salessection .tabs .customise .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .salessection .tabs .customise .content {
+    font-size: 1.6rem;
+    line-height: 140%; /* 28.8px */
+  }
+  .salessection .tabs .targets {
+    margin-top: 6rem;
+    padding: 2.5rem;
+  }
+  .salessection .tabs .targets .targetsimg {
+    height: 6rem;
+    width: 6rem;
+  }
+  .salessection .tabs .targets .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .salessection .tabs .targets .content {
+    font-size: 1.6rem;
+    line-height: 140%; /* 28.8px */
+  }
+  .salessection .tabs .coaching {
+    padding: 2.5rem;
+  }
+  .salessection .tabs .coaching .coachingimg {
+    height: 6rem;
+    width: 6rem;
+  }
+  .salessection .tabs .coaching .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .salessection .tabs .coaching .content {
+    font-size: 1.6rem;
+    line-height: 140%; /* 28.8px */
+    margin: 0;
+  }
+  .salessection .tabs .control {
+    padding: 2.5rem;
+  }
+  .salessection .tabs .control .controlimg {
+    height: 6rem;
+    width: 6rem;
+  }
+  .salessection .tabs .control .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .salessection .tabs .control .content {
+    font-size: 1.6rem;
+    line-height: 140%;
+  }
+  .decisionmakersection {
+    padding: 5rem 0;
+  }
+  .decisionmakersection__content {
+    font-size: 4rem;
+  }
+  .decisionmakersection__sub-content {
+    width: 80%;
+    margin-bottom: 0;
+  }
+  .decisionmakersection .contentpara {
+    width: 85%;
+    font-size: 2.6rem;
+  }
+  .decisionmakersection .line {
+    width: 90%;
+  }
+  .decisionmakersection .decisionmakerstats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .decisionmakersection .decisionmakerstats__col-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .decisionmakersection .decisionmakerstats__col-1 .triggerconditions {
+    width: 53rem;
+    margin-top: 3rem;
+  }
+  .decisionmakersection .decisionmakerstats__col-1 .schedule {
+    margin-top: -6rem;
+    width: 53rem;
+    margin-left: -3rem;
+  }
+  .decisionmakersection .decisionmakerstats .notifications {
+    margin-top: -6rem;
+    width: 53.3rem;
+    margin-left: -2rem;
+  }
+  .decisionmakersection .tabs {
+    width: 80%;
+    gap: 1.6rem;
+  }
+  .decisionmakersection .tabs .alerts {
+    margin-top: 6rem;
+    padding: 2.5rem;
+  }
+  .decisionmakersection .tabs .alerts img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .decisionmakersection .tabs .alerts .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .decisionmakersection .tabs .alerts .content {
+    font-size: 1.6rem;
+  }
+  .decisionmakersection .tabs .accuratedatatracking {
+    margin-top: 6rem;
+    padding: 2.5rem;
+  }
+  .decisionmakersection .tabs .accuratedatatracking img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .decisionmakersection .tabs .accuratedatatracking .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .decisionmakersection .tabs .accuratedatatracking .content {
+    font-size: 1.6rem;
+  }
+  .decisionmakersection .tabs .access {
+    padding: 2.5rem;
+  }
+  .decisionmakersection .tabs .access img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .decisionmakersection .tabs .access .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .decisionmakersection .tabs .access .content {
+    font-size: 1.6rem;
+  }
+  .decisionmakersection .tabs .performance {
+    padding: 2.5rem;
+  }
+  .decisionmakersection .tabs .performance img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .decisionmakersection .tabs .performance .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .decisionmakersection .tabs .performance .content {
+    font-size: 1.6rem;
+  }
+  .testimonials__content__content {
+    width: 70%;
+    font-size: 4rem;
+  }
+  .testimonials__content__sub-content {
+    width: 85%;
+    font-size: 2.2rem;
+  }
+  .testimonials__content__reviewsnavigation .arrow-left {
+    width: 7rem;
+    height: 7rem;
+  }
+  .testimonials__content__reviewsnavigation .arrow-right {
+    width: 7rem;
+    height: 7rem;
+  }
+  .footer .newsletter {
+    width: 80%;
+  }
+  .footer .newsletter .content {
+    font-size: 3rem;
+  }
+  .footer .newsletter .sub-content {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 600px) and (min-width: 500px) {
+  html {
+    font-size: 8px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar .bars-menu {
+    display: block;
+  }
+  .herosection__top {
+    height: 70rem;
+  }
+  .herosection__top__content .large-content {
+    font-size: 7rem;
+  }
+  .herosection__top__content .analytics-logo {
+    top: 35rem;
+  }
+  .herosection__top__content .instagram-logo-2 {
+    top: 52rem;
+  }
+  .herosection__top__content .hubspot-logo {
+    top: 55rem;
+  }
+  .herosection__top__content .excel-logo {
+    top: 50rem;
+  }
+  .herosection__top__content .sub-content {
+    top: 40rem;
+    font-size: 1.6rem;
+  }
+  .herosection__top__content .contactnowbtn {
+    top: 48rem;
+  }
+  .herosection__top__backgroundcircles .middle-circle {
+    top: 14rem;
+  }
+  .herosection__top__backgroundcircles .inner-circle {
+    top: 19rem;
+  }
+  .herosection__top__backgroundcircles .radical-gradient {
+    top: 13rem;
+  }
+  .herosection__bottom .main-content {
+    width: 85%;
+    font-size: 3.4rem;
+  }
+  .herosection__bottom .sub-content {
+    width: 80%;
+    font-size: 1.6rem;
+  }
+  .herosection__bottom img {
+    margin-top: 7rem;
+  }
+  .processsection {
+    padding-bottom: 10rem;
+  }
+  .processsection__info {
+    width: 80%;
+  }
+  .processsection__info .content {
+    font-size: 2.8rem;
+  }
+  .processsection__data {
+    width: 70%;
+  }
+  .processsection__data .numbering {
+    line-height: 130%;
+    font-size: 18rem;
+  }
+  .processsection__data .heading {
+    font-size: 2.5rem;
+  }
+  .processsection__data .content {
+    width: 80%;
+    font-size: 1.6rem;
+  }
+  .marketingsection {
+    padding: 5rem 0;
+  }
+  .marketingsection .content {
+    font-size: 3.4rem;
+  }
+  .marketingsection .contentpara {
+    width: 80%;
+    font-size: 2.3rem;
+  }
+  .marketingsection .tabs {
+    width: 80%;
+    gap: 1.6rem;
+  }
+  .marketingsection .tabs .multisourceconnection {
+    margin-top: 5rem;
+    width: 60%;
+    padding: 2.5rem;
+  }
+  .marketingsection .tabs .multisourceconnection img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .marketingsection .tabs .multisourceconnection .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .marketingsection .tabs .multisourceconnection .content {
+    font-size: 1.6rem;
+    line-height: 140%;
+  }
+  .marketingsection .tabs .definegoal {
+    margin-top: 5rem;
+    width: 40%;
+    padding: 2.5rem;
+  }
+  .marketingsection .tabs .definegoal img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .marketingsection .tabs .definegoal .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .marketingsection .tabs .definegoal .content {
+    font-size: 1.6rem;
+    line-height: 140%; /* 28.8px */
+  }
+  .marketingsection .tabs .accuraterevenueinfo {
+    width: 40%;
+    padding: 2.5rem;
+  }
+  .marketingsection .tabs .accuraterevenueinfo img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .marketingsection .tabs .accuraterevenueinfo .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .marketingsection .tabs .accuraterevenueinfo .content {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28.8px */
+  }
+  .marketingsection .tabs .accuratedatatracking {
+    width: 60%;
+    padding: 2.5rem;
+  }
+  .marketingsection .tabs .accuratedatatracking img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .marketingsection .tabs .accuratedatatracking .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .marketingsection .tabs .accuratedatatracking .content {
+    font-size: 1.6rem;
+    line-height: 140%;
+  }
+  .marketingsection .marketinggraphs .marketinggraph1 {
+    margin-top: 8rem;
+    width: 33rem;
+    height: 38rem;
+  }
+  .marketingsection .marketinggraphs .marketinggraph2 {
+    width: 33rem;
+    height: 38rem;
+  }
+  .marketingsection .line {
+    width: 90%;
+  }
+  .salessection {
+    padding: 5rem 0;
+  }
+  .salessection__content {
+    width: 80%;
+    font-size: 3.5rem;
+  }
+  .salessection .sub-content {
+    width: 80%;
+    font-size: 1.7rem;
+  }
+  .salessection .salesinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13rem;
+    margin-bottom: 5.6rem;
+  }
+  .salessection .salesinfo .salesinfo1 {
+    height: 21rem;
+  }
+  .salessection .salesinfo .salesinfo2 {
+    height: 35rem;
+  }
+  .salessection .salesinfo .salesinfo3 {
+    height: 21rem;
+  }
+  .salessection .contentpara {
+    width: 80%;
+    font-size: 2.6rem;
+  }
+  .salessection .line {
+    width: 90%;
+  }
+  .salessection .tabs {
+    width: 80%;
+    gap: 1.6rem;
+  }
+  .salessection .tabs .customise {
+    margin-top: 6rem;
+    padding: 2.5rem;
+  }
+  .salessection .tabs .customise .customiseimg {
+    height: 6rem;
+    width: 6rem;
+  }
+  .salessection .tabs .customise .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .salessection .tabs .customise .content {
+    font-size: 1.6rem;
+    line-height: 140%; /* 28.8px */
+  }
+  .salessection .tabs .targets {
+    margin-top: 6rem;
+    padding: 2.5rem;
+  }
+  .salessection .tabs .targets .targetsimg {
+    height: 6rem;
+    width: 6rem;
+  }
+  .salessection .tabs .targets .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .salessection .tabs .targets .content {
+    font-size: 1.6rem;
+    line-height: 140%; /* 28.8px */
+  }
+  .salessection .tabs .coaching {
+    padding: 2.5rem;
+  }
+  .salessection .tabs .coaching .coachingimg {
+    height: 6rem;
+    width: 6rem;
+  }
+  .salessection .tabs .coaching .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .salessection .tabs .coaching .content {
+    font-size: 1.6rem;
+    line-height: 140%; /* 28.8px */
+    margin: 0;
+  }
+  .salessection .tabs .control {
+    padding: 2.5rem;
+  }
+  .salessection .tabs .control .controlimg {
+    height: 6rem;
+    width: 6rem;
+  }
+  .salessection .tabs .control .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .salessection .tabs .control .content {
+    font-size: 1.6rem;
+    line-height: 140%;
+  }
+  .decisionmakersection {
+    padding: 5rem 0;
+  }
+  .decisionmakersection__content {
+    font-size: 4rem;
+  }
+  .decisionmakersection__sub-content {
+    width: 80%;
+    margin-bottom: 0;
+  }
+  .decisionmakersection .contentpara {
+    width: 85%;
+    font-size: 2.6rem;
+  }
+  .decisionmakersection .line {
+    width: 90%;
+  }
+  .decisionmakersection .decisionmakerstats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .decisionmakersection .decisionmakerstats__col-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .decisionmakersection .decisionmakerstats__col-1 .triggerconditions {
+    width: 53rem;
+    margin-top: 3rem;
+  }
+  .decisionmakersection .decisionmakerstats__col-1 .schedule {
+    margin-top: -6rem;
+    width: 53rem;
+    margin-left: -3rem;
+  }
+  .decisionmakersection .decisionmakerstats .notifications {
+    margin-top: -6rem;
+    width: 53.3rem;
+    margin-left: -2rem;
+  }
+  .decisionmakersection .tabs {
+    width: 80%;
+    gap: 1.6rem;
+  }
+  .decisionmakersection .tabs .alerts {
+    margin-top: 6rem;
+    padding: 2.5rem;
+  }
+  .decisionmakersection .tabs .alerts img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .decisionmakersection .tabs .alerts .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .decisionmakersection .tabs .alerts .content {
+    font-size: 1.6rem;
+  }
+  .decisionmakersection .tabs .accuratedatatracking {
+    margin-top: 6rem;
+    padding: 2.5rem;
+  }
+  .decisionmakersection .tabs .accuratedatatracking img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .decisionmakersection .tabs .accuratedatatracking .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .decisionmakersection .tabs .accuratedatatracking .content {
+    font-size: 1.6rem;
+  }
+  .decisionmakersection .tabs .access {
+    padding: 2.5rem;
+  }
+  .decisionmakersection .tabs .access img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .decisionmakersection .tabs .access .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .decisionmakersection .tabs .access .content {
+    font-size: 1.6rem;
+  }
+  .decisionmakersection .tabs .performance {
+    padding: 2.5rem;
+  }
+  .decisionmakersection .tabs .performance img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .decisionmakersection .tabs .performance .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .decisionmakersection .tabs .performance .content {
+    font-size: 1.6rem;
+  }
+  .testimonials__content__content {
+    width: 70%;
+    font-size: 4rem;
+  }
+  .testimonials__content__sub-content {
+    width: 85%;
+    font-size: 2.2rem;
+  }
+  .testimonials__content__reviewsnavigation .arrow-left {
+    width: 7rem;
+    height: 7rem;
+  }
+  .testimonials__content__reviewsnavigation .arrow-right {
+    width: 7rem;
+    height: 7rem;
+  }
+  .footer {
+    padding-bottom: 5rem;
+  }
+  .footer .newsletter {
+    width: 90%;
+  }
+  .footer .newsletter .content {
+    font-size: 2.2rem;
+  }
+  .footer .newsletter .sub-content {
+    font-size: 1.6rem;
+  }
+  .footer .footer-nav {
+    width: 85%;
+  }
+  .footer .footer-nav .col h2 {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+  .footer .footer-nav .col h3 {
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1rem;
+  }
+  .footer .terms-conditions .policies {
+    width: 80%;
+  }
+  .footer .terms-conditions .copyrightmark {
+    width: 40%;
+  }
+  .footer .footer-pruuv-logo {
+    position: absolute;
+    bottom: 4rem;
+    width: 6rem;
+  }
+}
+@media only screen and (max-width: 500px) and (min-width: 360px) {
+  html {
+    font-size: 8px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar .bars-menu {
+    display: block;
+  }
+  .herosection__top {
+    height: 50rem;
+  }
+  .herosection__top__content .large-content {
+    font-size: 5rem;
+    top: 10rem;
+  }
+  .herosection__top__content .x-logo {
+    top: 4rem;
+  }
+  .herosection__top__content .facebook-logo {
+    top: 6rem;
+  }
+  .herosection__top__content .google-logo {
+    top: 7rem;
+  }
+  .herosection__top__content .analytics-logo {
+    top: 22rem;
+  }
+  .herosection__top__content .instagram-logo {
+    top: 12rem;
+  }
+  .herosection__top__content .instagram-logo-2 {
+    top: 38rem;
+  }
+  .herosection__top__content .hubspot-logo {
+    top: 40rem;
+  }
+  .herosection__top__content .excel-logo {
+    top: 30rem;
+  }
+  .herosection__top__content .sub-content {
+    top: 27rem;
+    font-size: 1.5rem;
+    width: 80%;
+  }
+  .herosection__top__content .contactnowbtn {
+    top: 35rem;
+    font-size: 1.5rem;
+  }
+  .herosection__top__backgroundcircles .outer-circle {
+    top: 5rem;
+  }
+  .herosection__top__backgroundcircles .middle-circle {
+    top: 8rem;
+  }
+  .herosection__top__backgroundcircles .inner-circle {
+    top: 11rem;
+  }
+  .herosection__top__backgroundcircles .radical-gradient {
+    top: 7rem;
+  }
+  .herosection__bottom .main-content {
+    width: 85%;
+    font-size: 3rem;
+  }
+  .herosection__bottom .sub-content {
+    width: 90%;
+    font-size: 1.6rem;
+  }
+  .herosection__bottom img {
+    margin-top: 5rem;
+  }
+  .processsection {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10rem;
+  }
+  .processsection__info {
+    width: 100%;
+  }
+  .processsection__info .content {
+    width: 90%;
+    font-size: 2.8rem;
+  }
+  .processsection__data {
+    width: 100%;
+  }
+  .processsection__data .numbering {
+    line-height: 130%;
+    font-size: 18rem;
+  }
+  .processsection__data .heading {
+    font-size: 2.5rem;
+  }
+  .processsection__data .content {
+    width: 90%;
+    font-size: 1.6rem;
+  }
+  .marketingsection {
+    padding: 5rem 0;
+  }
+  .marketingsection .content {
+    font-size: 3.4rem;
+  }
+  .marketingsection .contentpara {
+    width: 80%;
+    font-size: 2.3rem;
+  }
+  .marketingsection .tabs {
+    width: 80%;
+    gap: 1.6rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .marketingsection .tabs .multisourceconnection {
+    margin-top: 5rem;
+    width: 100%;
+    padding: 2.5rem;
+  }
+  .marketingsection .tabs .multisourceconnection img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .marketingsection .tabs .multisourceconnection .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .marketingsection .tabs .multisourceconnection .content {
+    font-size: 1.6rem;
+    line-height: 140%;
+  }
+  .marketingsection .tabs .definegoal {
+    margin-top: 0rem;
+    width: 100%;
+    padding: 2.5rem;
+  }
+  .marketingsection .tabs .definegoal img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .marketingsection .tabs .definegoal .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .marketingsection .tabs .definegoal .content {
+    font-size: 1.6rem;
+    line-height: 140%; /* 28.8px */
+  }
+  .marketingsection .tabs .accuraterevenueinfo {
+    width: 100%;
+    padding: 2.5rem;
+  }
+  .marketingsection .tabs .accuraterevenueinfo img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .marketingsection .tabs .accuraterevenueinfo .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .marketingsection .tabs .accuraterevenueinfo .content {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28.8px */
+  }
+  .marketingsection .tabs .accuratedatatracking {
+    width: 100%;
+    padding: 2.5rem;
+  }
+  .marketingsection .tabs .accuratedatatracking img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .marketingsection .tabs .accuratedatatracking .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .marketingsection .tabs .accuratedatatracking .content {
+    font-size: 1.6rem;
+    line-height: 140%;
+  }
+  .marketingsection .marketinggraphs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .marketingsection .marketinggraphs .marketinggraph1 {
+    margin-top: 5rem;
+    width: 43rem;
+    height: 40rem;
+  }
+  .marketingsection .marketinggraphs .marketinggraph2 {
+    margin-left: 0rem;
+    margin-top: 0rem;
+    width: 43rem;
+    height: 40rem;
+  }
+  .marketingsection .line {
+    width: 90%;
+  }
+  .salessection {
+    padding: 5rem 0;
+  }
+  .salessection__content {
+    width: 80%;
+    font-size: 3.5rem;
+  }
+  .salessection .sub-content {
+    width: 80%;
+    font-size: 1.7rem;
+  }
+  .salessection .salesinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5.6rem;
+  }
+  .salessection .salesinfo .salesinfo1 {
+    width: 28rem;
+  }
+  .salessection .salesinfo .salesinfo2 {
+    width: 28rem;
+    height: 39rem;
+  }
+  .salessection .salesinfo .salesinfo3 {
+    width: 30rem;
+  }
+  .salessection .contentpara {
+    width: 80%;
+    font-size: 2.6rem;
+  }
+  .salessection .line {
+    width: 90%;
+  }
+  .salessection .tabs {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 1.6rem;
+  }
+  .salessection .tabs .customise {
+    width: 100%;
+    margin-top: 6rem;
+    padding: 2.5rem;
+  }
+  .salessection .tabs .customise .customiseimg {
+    height: 6rem;
+    width: 6rem;
+  }
+  .salessection .tabs .customise .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .salessection .tabs .customise .content {
+    font-size: 1.6rem;
+    line-height: 140%; /* 28.8px */
+  }
+  .salessection .tabs .targets {
+    width: 100%;
+    margin-top: 0rem;
+    padding: 2.5rem;
+  }
+  .salessection .tabs .targets .targetsimg {
+    height: 6rem;
+    width: 6rem;
+  }
+  .salessection .tabs .targets .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .salessection .tabs .targets .content {
+    font-size: 1.6rem;
+    line-height: 140%; /* 28.8px */
+  }
+  .salessection .tabs .coaching {
+    width: 100%;
+    padding: 2.5rem;
+  }
+  .salessection .tabs .coaching .coachingimg {
+    height: 6rem;
+    width: 6rem;
+  }
+  .salessection .tabs .coaching .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .salessection .tabs .coaching .content {
+    font-size: 1.6rem;
+    line-height: 140%; /* 28.8px */
+    margin: 0;
+  }
+  .salessection .tabs .control {
+    width: 100%;
+    padding: 2.5rem;
+  }
+  .salessection .tabs .control .controlimg {
+    height: 6rem;
+    width: 6rem;
+  }
+  .salessection .tabs .control .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .salessection .tabs .control .content {
+    font-size: 1.6rem;
+    line-height: 140%;
+  }
+  .decisionmakersection {
+    padding: 5rem 0;
+  }
+  .decisionmakersection__content {
+    font-size: 4rem;
+  }
+  .decisionmakersection__sub-content {
+    width: 80%;
+    margin-bottom: 0;
+  }
+  .decisionmakersection .contentpara {
+    width: 85%;
+    font-size: 2.6rem;
+  }
+  .decisionmakersection .line {
+    width: 90%;
+  }
+  .decisionmakersection .decisionmakerstats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .decisionmakersection .decisionmakerstats__col-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .decisionmakersection .decisionmakerstats__col-1 .triggerconditions {
+    width: 45rem;
+    margin-top: 3rem;
+  }
+  .decisionmakersection .decisionmakerstats__col-1 .schedule {
+    margin-top: -6rem;
+    width: 45rem;
+    margin-left: -3rem;
+  }
+  .decisionmakersection .decisionmakerstats .notifications {
+    margin-top: -6rem;
+    width: 45rem;
+    margin-left: -2rem;
+  }
+  .decisionmakersection .tabs {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 1.6rem;
+  }
+  .decisionmakersection .tabs .alerts {
+    width: 100%;
+    margin-top: 6rem;
+    padding: 2.5rem;
+  }
+  .decisionmakersection .tabs .alerts img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .decisionmakersection .tabs .alerts .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .decisionmakersection .tabs .alerts .content {
+    font-size: 1.6rem;
+  }
+  .decisionmakersection .tabs .accuratedatatracking {
+    width: 100%;
+    margin-top: 0rem;
+    padding: 2.5rem;
+  }
+  .decisionmakersection .tabs .accuratedatatracking img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .decisionmakersection .tabs .accuratedatatracking .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .decisionmakersection .tabs .accuratedatatracking .content {
+    font-size: 1.6rem;
+  }
+  .decisionmakersection .tabs .access {
+    width: 100%;
+    padding: 2.5rem;
+  }
+  .decisionmakersection .tabs .access img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .decisionmakersection .tabs .access .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .decisionmakersection .tabs .access .content {
+    font-size: 1.6rem;
+  }
+  .decisionmakersection .tabs .performance {
+    width: 100%;
+    padding: 2.5rem;
+  }
+  .decisionmakersection .tabs .performance img {
+    height: 6rem;
+    width: 6rem;
+  }
+  .decisionmakersection .tabs .performance .heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+  }
+  .decisionmakersection .tabs .performance .content {
+    font-size: 1.6rem;
+  }
+  .testimonials__content__content {
+    width: 90%;
+    font-size: 3rem;
+  }
+  .testimonials__content__sub-content {
+    width: 90%;
+    font-size: 1.8rem;
+  }
+  .testimonials__content__reviewsnavigation .arrow-left {
+    width: 7rem;
+    height: 7rem;
+  }
+  .testimonials__content__reviewsnavigation .arrow-right {
+    width: 7rem;
+    height: 7rem;
+  }
+  .footer {
+    padding-bottom: 5rem;
+  }
+  .footer .newsletter {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .newsletter .content {
+    font-size: 2.2rem;
+  }
+  .footer .newsletter .sub-content {
+    font-size: 1.6rem;
+  }
+  .footer .footer-nav {
+    gap: 3rem;
+    width: 85%;
+  }
+  .footer .footer-nav .col h2 {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  .footer .footer-nav .col h3 {
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1rem;
+  }
+  .footer .footer-nav .data-insights-group {
+    order: 1;
+  }
+  .footer .footer-nav .product-group {
+    order: 3;
+  }
+  .footer .footer-nav .use-cases-group {
+    order: 2;
+  }
+  .footer .footer-nav .resources-group {
+    order: 4;
+  }
+  .footer .footer-nav .social-links {
+    order: 5;
+  }
+  .footer .terms-conditions .policies {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  .footer .terms-conditions .policies h2 {
+    font-size: 1.6rem;
+  }
+  .footer .terms-conditions .copyrightmark {
+    width: 40%;
+  }
+  .footer .footer-pruuv-logo {
+    position: absolute;
+    bottom: 4rem;
+    width: 6rem;
+  }
+}/*# sourceMappingURL=style.css.map */

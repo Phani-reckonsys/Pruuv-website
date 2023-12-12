@@ -1,0 +1,910 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600&family=Lora:wght@400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+html{
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7.5rem;
+    padding: 0 3%;
+    border-top: 1rem solid #0FBFB5;
+    .company-logo{
+        width: 9.5rem;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        li{
+            display: flex;
+            a{
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color:  #010B15;
+                text-align: center;
+                font-family: DM Sans;
+                font-size: 1.8rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%; /* 25.2px */
+                text-transform: capitalize;
+                img{
+                    width: 1.3rem;
+                    height: 1.3rem;
+                }
+            }
+            button{
+                display: flex;
+                padding: 1rem 2.4rem;
+                justify-content: center;
+                border: none;
+                border-radius: 4px;
+                background: #00BF91;
+                color: #FFF;
+                font-family: DM Sans;
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%; /* 22.4px */
+                cursor: pointer;
+                &:hover{
+                    background-color: #078D6D;
+                }
+            }
+
+        }
+    }
+    .menu-bars{
+        display: none;
+    }
+}
+
+.herosection{
+         background: linear-gradient(180deg, #072133 0%, #051723 100%);
+         overflow: hidden;
+        &__backgroundcircles{
+            position: relative;
+            .outer-circle{
+                position: absolute;
+                width: 40%;
+                height: auto;
+                top: 8rem;
+                left: 30%;
+            }
+            .middle-circle{
+                position: absolute;
+                width: 35%;
+                height: auto;
+                top: 12rem;
+                left: 32.5%;
+            }
+            .inner-circle{
+                position: absolute;
+                width: 30%;
+                height: auto;
+                top: 17rem;
+                left: 35%;
+            }
+            .radical-gradient{
+                position: absolute;
+                width: 44%;
+                height: auto;
+                top: 10rem;
+                left: 28%;
+
+            }
+        }
+        &__content{
+            padding-top: 15rem;
+            padding-bottom: 10rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .heading{
+                color: var(--new-palette-neutral-white, #FFF);
+                text-align: center;
+                font-family: Lora;
+                font-size: 5.6rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%; /* 78.4px */
+                width: 70%;
+            }
+            .content{
+                color: var(--new-palette-neutral-white, #FFF);
+                text-align: center;
+                font-family: DM Sans;
+                font-size: 2.2rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%; /* 33px */
+                width: 60%;
+                margin-top: 3rem;
+            }
+
+        }
+}
+
+.contentsection{
+    background: #EDEDE8;
+    display: flex;
+    padding: 5vw 0;
+    &__information{
+        display: flex;
+        width: 60vw;
+        flex-direction: column;
+        padding-left: 5vw;
+        gap:2rem;
+        h2{
+            color: #071B2E;
+            font-family: DM Sans;
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 27px */
+        }
+        .para1{
+            color: #085161;
+            margin-bottom: 3rem;;
+        }
+        .quote{
+            padding-left: 1rem;
+            color: #535960;
+            font-family: Lora;
+            border-left: 0.6rem solid #268297;
+            margin-bottom: 3rem;
+        }
+        .customer-page-image{
+            width: 100%;
+            height: 27vw;
+            max-height: 30rem;
+            object-fit: cover;
+            object-position: left top;
+            margin: 3rem 0;
+            border-radius: 1rem;
+        }
+        &__info{
+            display: flex;
+            margin-top: 3rem;
+            .tab{
+                display: flex;
+                flex-direction: column;
+                .value{
+                    color: #071B2E;
+                    text-align: center;
+                    font-family: Lora;
+                    font-size: 5.6rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 123%; /* 68.88px */
+                }
+                .data{
+                    color: #57626D;
+                    text-align: center;
+                    font-family: DM Sans;
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 24px */
+                }
+            }
+            .tab-2{
+                border-left: 1px solid #000;
+                border-right: 1px solid #000;
+            }
+        }
+    }
+    &__relatedstories{
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        align-items: center;
+        gap: 2.4rem;
+        .heading{
+            width: 90%;
+            text-align: left;
+            color: #071B2E;
+            font-family: DM Sans;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%; /* 32px */
+        }
+        .storycard{
+            display: flex;
+            width: 90%;
+            height: 10vw;
+            background-color: #fff;
+            border-radius: 1rem;
+            .storycardimage{
+                width: 33%;
+                height: 100%;
+                border-top-left-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+            }
+            .storycarddata{
+                display: flex;
+                flex-direction: column;
+                gap:1.2rem;
+                padding: 1.2rem;
+                .heading{
+                    color: #0A1015;
+                    font-family: DM Sans;
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 140%; /* 22.4px */
+                    width: 100%;
+                }
+                .data{
+                    color: #292828;
+                    font-family: DM Sans;
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 25.6px */
+                }
+            }
+        }
+
+    }
+}
+.testimonials{
+    background: #F8F8F8;
+    position: relative;
+    &__background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        .outer-circle{
+            position: absolute;
+            bottom:-5rem;
+            left: 27%;
+            width: 50vw;
+            height: 50vw;
+            border: 1px solid #ddd;
+            border-radius: 25vw;
+        }
+        .inner-circle{
+            position: absolute;
+            bottom: -5rem;
+            left: 32%;
+           width: 40vw;
+           height: 40vw;
+           border-radius: 20vw;
+           border: 1px solid #ddd;
+           
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &__heading{
+            color: rgba(14, 125, 150, 0.92);
+            font-family: Centra No1;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; /* 27px */
+            letter-spacing: 1.8px;
+            margin:auto;
+            margin-top: 8.7rem;
+            margin-bottom: 2rem;
+        }
+        &__content{
+            color: #071B2E;
+            font-family: Lora;
+            font-size: 49px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 123%; /* 60.27px */
+            margin: auto;
+            width: 40%;
+            margin-bottom: 3.8rem;
+
+        }
+        &__sub-content{
+            color: #283A4D;
+            font-family: DM Sans;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 27px */
+            margin: auto;
+            width: 40%;
+            text-align: center;
+            z-index: 1;
+        }
+        &__reviews{
+            display: flex;
+            gap: 5rem;
+            margin-top: 11rem;
+            overflow-x: auto;
+            &__card{
+                display: flex;
+                height: 22.4rem;
+                min-width: 35rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+                border-radius: 1rem;
+                background: #FFF;
+                box-shadow: 0px 24px 34px 0px rgba(126, 116, 116, 0.12);
+                padding: 3rem 3rem;
+                z-index: 1;
+                .card-content{
+                    color: #071B2E;
+                    font-family: DM Sans;
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 24px */
+                }
+                .card-profile{
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+                    img{
+                        width: 4.5rem;
+                        height: 4.5rem;
+                        flex-shrink: 0;
+                    }
+                    .profile-data{
+                        .profile-name{
+                            color: #010101;
+                            font-family: DM Sans;
+                            font-size: 1.5rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 150%; /* 22.5px */
+                        }
+                        .profile-designation{
+                            color: rgba(69, 82, 85, 0.98);
+                            font-family: DM Sans;
+                            font-size: 1.6rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 100%; /* 16px */
+                        }
+                    }
+                }
+            }
+            .card-even{
+                margin-top: 4rem;
+            }
+        }
+        &__reviewsnavigation{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            gap: 2rem;
+            margin-top: 8.7rem;
+            margin-bottom: 6.7rem;
+        }
+    }
+}
+
+.footer{
+    background: #16242E;
+    padding: 10rem 0;
+    position: relative;
+    .newsletter{
+        margin: auto;
+        position: relative;
+        display: flex;
+        width: 75%;
+        padding: 4%;
+        align-items: flex-start;
+        gap: 2rem;
+        border-radius: 3.2rem;
+        background: #213543;
+        &__content{
+            position: relative;
+            width: 100%;
+            .content{
+                color: #FFF;
+                font-family: DM Sans;
+                font-size: 3.2rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%; /* 44.8px */
+            }
+            .sub-content{
+                color: #FFF;
+                font-family: DM Sans;
+                font-size: 1.8rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%; /* 27px */
+                margin-top: 1rem;
+            }
+            .registerbtn{
+                padding: 1.4rem 2.4rem;
+                margin-top: 5.5rem;
+                border: none;
+                border-radius: 4px;
+                background: #2CAC9D;
+                color: var(--old-palette-neutral-white, #FFF);
+                font-family: DM Sans;
+                font-size: 1.8rem;
+                font-weight: 700;
+                cursor: pointer;
+                &:hover{
+                    background-color: #078D6D;
+                }
+            }
+            
+        }
+        &__images{
+           width: 100%;
+            .salesfunnel-img{
+                position: absolute;
+                right:0;
+                bottom: 0;
+                border-bottom-right-radius: 3.2rem;
+                width: 45%;
+            }
+            .newsletter-revenue{
+                position: absolute;
+                right:0;
+                bottom: 0;
+                width: 25%;
+            }
+        }
+    }
+    .terms-conditions{
+         width: 80%;
+        margin: auto;
+        margin-top: 5rem;
+        border-top: 1px solid  rgba(69, 82, 85, 0.98);
+        padding-top: 5rem;
+        .policies{
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            margin: auto;
+            flex-wrap: wrap;
+            gap: 1rem;
+            h2{
+                a{
+                    text-decoration: none;
+                color: #FFF;
+                font-family: DM Sans;
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                }
+            }
+
+        }
+        .copyrightmark{
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            text-align: center;
+            width: 20%;
+            margin: 3rem auto;
+        }
+    }
+    .footer-pruuv-logo{
+        position: absolute;
+        bottom: 9rem;
+        width: 8rem;
+    }
+}
+
+
+@media only screen and (max-width:1100px) and (min-width: 1000px) {
+    .herosection{
+        &__content{
+            padding-top: 10rem;
+            .heading{
+                width: 80%;
+                font-size: 5rem;
+            }
+            
+        }
+    }
+    .testimonials{
+        &__content{
+            &__content{
+                width: 60%;
+            }
+            &__sub-content{
+                width: 60%;
+            }
+        }
+    }
+    .footer{
+        .newsletter{
+            &__content{
+                .content{
+                    width: 130%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1000px) and (min-width:850px){
+    html{
+        font-size: 9px;
+    }
+    .herosection{
+        &__content{
+            padding-top: 10rem;
+            .heading{
+                width: 80%;
+                font-size: 5rem;
+            }
+            
+        }
+    }
+    .contentsection{
+        &__information{
+            h2{
+                font-size: 1.6rem;
+            }
+        }
+        &__relatedstories{
+            .storycard{
+                .storycarddata{
+                    .heading{
+                        font-size: 1.4rem;
+                    }
+                    .data{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+    .testimonials{
+        &__content{
+            &__content{
+                width: 60%;
+            }
+            &__sub-content{
+                width: 60%;
+            }
+        }
+    }
+    .footer{
+        .newsletter{
+            &__content{
+                .content{
+                    width: 130%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:850px) and (min-width:600px){
+    html{
+        font-size: 9px;
+    }
+    .navbar{
+        padding: 0 10%;
+        ul{
+            display: none;
+        }
+        .menu-bars{
+            display: block;
+            width: 3rem;
+        }
+    }
+    .herosection{
+        &__content{
+            padding-top: 10rem;
+            .heading{
+                width: 80%;
+                font-size: 4rem;
+            }
+            .content{
+                width: 80%;
+                font-size: 2rem;
+            }
+        }
+    }
+    .contentsection{
+        flex-direction: column;
+        align-items: center;
+        &__information{
+            width: 90vw;
+            h2{
+                font-size: 1.6rem;
+            }
+        }
+        &__relatedstories{
+            width: 80vw;
+           padding-top: 5rem;
+            .storycard{
+                height: 18vw;
+                .storycarddata{
+                    .heading{
+                        font-size: 1.6rem;
+                    }
+                    .data{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+    .testimonials{
+        &__content{
+            &__content{
+                width: 80%;
+                font-size: 5rem;
+            }
+            &__sub-content{
+                width: 70%;
+            }
+        }
+    }
+    .footer{
+        .newsletter{
+            &__content{
+                .content{
+                    width: 130%;
+                    font-size: 2.8rem;
+                }
+                .sub-content{
+                    width: 130%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px) and (min-width:500px){
+    html{
+        font-size: 9px;
+    }
+    .navbar{
+        padding: 0 10%;
+        ul{
+            display: none;
+        }
+        .menu-bars{
+            display: block;
+            width: 3rem;
+        }
+    }
+    .herosection{
+        &__content{
+            padding-top: 10rem;
+            .heading{
+                width: 85%;
+                font-size: 3.5rem;
+            }
+            .content{
+                width: 80%;
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .contentsection{
+        flex-direction: column;
+        align-items: center;
+        &__information{
+            width: 90vw;
+            h2{
+                font-size: 1.6rem;
+            }
+            &__info{
+                .tab{
+                    .value{
+                        color: #071B2E;
+                        text-align: center;
+                        font-family: Lora;
+                        font-size: 5rem;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 123%; /* 68.88px */
+                    }
+                    .data{
+                        color: #57626D;
+                        text-align: center;
+                        font-family: DM Sans;
+                        font-size: 1.4rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%; /* 24px */
+                    }
+                }
+                .tab-2{
+                    border-left: 1px solid #000;
+                    border-right: 1px solid #000;
+                }
+            }
+        }
+        &__relatedstories{
+            width: 80vw;
+           padding-top: 5rem;
+            .storycard{
+                height: 18vw;
+                .storycarddata{
+                    .heading{
+                        font-size: 1.6rem;
+                    }
+                    .data{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+    .testimonials{
+        &__content{
+            &__content{
+                width: 80%;
+                font-size: 5rem;
+            }
+            &__sub-content{
+                width: 70%;
+            }
+        }
+    }
+    .footer{
+        .newsletter{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            &__content{
+                .content{
+                    width: 100%;
+                }
+            }
+        }
+        .terms-conditions{
+            .policies{
+                width: 90%;
+            }
+            .copyrightmark{
+                width: 30%;
+            }
+        }
+        .footer-pruuv-logo{
+            position: absolute;
+            bottom: 5rem;
+            width: 6rem;
+        }
+    }
+}
+
+@media only screen and (max-width:500px) and (min-width:360px){
+    html{
+        font-size: 9px;
+    }
+    .navbar{
+        padding: 0 10%;
+        ul{
+            display: none;
+        }
+        .menu-bars{
+            display: block;
+            width: 3rem;
+        }
+    }
+    .herosection{
+        &__content{
+            padding-top: 10rem;
+            .heading{
+                width: 90%;
+                font-size: 3.5rem;
+            }
+            .content{
+                width: 90%;
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .contentsection{
+        flex-direction: column;
+        align-items: center;
+        &__information{
+            width: 90vw;
+            h2{
+                font-size: 1.6rem;
+            }
+            &__info{
+                .tab{
+                    .value{
+                        font-size: 5rem;
+                    }
+                    .data{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        &__relatedstories{
+            width: 80vw;
+           padding-top: 5rem;
+            .storycard{
+                height: 18vw;
+                .storycarddata{
+                    gap: 1rem;
+                    padding: 0.8rem;
+                    .heading{
+                        font-size: 1.3rem;
+                    }
+                    .data{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+    .testimonials{
+        &__content{
+            &__heading{
+                font-size: 2rem;
+            }
+            &__content{
+                width: 90%;
+                font-size: 3.5rem;
+            }
+            &__sub-content{
+                width: 90%;
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .footer{
+        .newsletter{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            &__content{
+                .content{
+                    font-size: 2.2rem;
+                    width: 100%;
+                }
+                .sub-content{
+                    font-size: 1.6rem;;
+                }
+                .registerbtn{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .terms-conditions{
+            .policies{
+                width: 90%;
+                justify-content: center;
+                gap: 2rem;
+            }
+            .copyrightmark{
+                width: 40%;
+            }
+        }
+        .footer-pruuv-logo{
+            position: absolute;
+            bottom: 5rem;
+            width: 6rem;
+        }
+    }
+}
+
