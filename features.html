@@ -52,10 +52,10 @@
                 </div>
             </div>
         </div>
-        <video id="efficiencysectionvideo" src="./assets/efficiencysectionvideo.webm" muted autoplay loop="true"></video>
+        <video id="efficiencysectionvideo" src="./assets/efficiencysectionvideo.webm" muted></video>
     </div>
     <div class="flexibilitysection">
-        <video id="flexibilitysectionvideo" src="./assets/flexibilitysectionvideo.webm" autoplay muted loop="true"></video>
+        <video id="flexibilitysectionvideo" src="./assets/flexibilitysectionvideo.webm" muted></video>
     <div class="flexibilitysection__data">
         <div class="flexibilitysection__data__heading">FLEXIBLE</div>
         <div class="flexibilitysection__data__content">Simple, Customs Dashboard You Can Set Up in Minutes</div>
@@ -92,14 +92,14 @@
                 </div>
             </div>
         </div>
-        <video id="salesefficiencysectionvideo" src="./assets/salesefficiencysectionvideo.webm" autoplay muted loop="true"></video>
+        <video id="salesefficiencysectionvideo" src="./assets/salesefficiencysectionvideo.webm" muted ></video>
     </div>
     <div class="mobilesection">
         <h2 class="mobilesection__heading">MOBILE EXPERIENCE</h2>
         <h2 class="mobilesection__content">Stay Up-To-Date On The Go</h2>
         <h3 class="mobilesection__sub-content">Keep peace-of-mind with all your important metrics wherever you are</h3>
         <div class="mobilesectionvideocontainer">
-            <video id="mobileexperiencesectionvideo" src="./assets/mobileexperiencesectionvideo.webm" autoplay muted loop="true"></video>
+            <video id="mobileexperiencesectionvideo" src="./assets/mobileexperiencesectionvideo.webm" muted></video>
         </div>
         <div class="line"></div>
         <div class="profile">
@@ -134,5 +134,32 @@
         </div>
         <img src="./assets/footer-pruuv-logo.png" class="footer-pruuv-logo">
     </div>
+
+    <script>
+        const selectvideo = document.querySelectorAll('video');
+        let options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: [0, 0.25, 0.5, 0.75, 1]
+        }
+        let callback = (entries, observer) => {
+            entries.forEach(entry => {
+                console.log(entry.target); // Log the target element
+                console.log(entry.isIntersecting);
+                console.log(entry.intersectionRatio);
+                console.log(entry.intersectionRatio > 0)
+                if (entry.isIntersecting){
+                   if (entry.intersectionRatio >= 0.5) {
+                         entry.target.play(); 
+                    }
+                }
+            });
+        };
+        let observer = new IntersectionObserver(callback, options);
+        selectvideo.forEach(video => {
+        observer.observe(video);    
+        });    
+
+    </script>
 </body>
 </html>
